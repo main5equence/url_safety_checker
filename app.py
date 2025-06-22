@@ -7,6 +7,7 @@ suspicious_words = ["login", "verify", "update", "secure", "paypal", "bank", "al
 @app.route("/", methods=["GET", "POST"])
 def index():
     result = None
+    url = ''
     if request.method == "POST":
         url = request.form["url"]
 
@@ -24,7 +25,7 @@ def index():
         else:
             result = "🚨 Warning!\n" + "\n".join(assessment)
 
-    return render_template("index.html", result=result)
+    return render_template("index.html", result=result, url=url)
 
 if __name__ == "__main__":
     import os
