@@ -10,6 +10,6 @@ Displays a warning or approval message.
 
 ![Form Screenshot](paypal_comp.png)
 
-![Form Screenshot](paypal_mob.png)
+![Form Screenshot](paypal_mob.jpeg)
 
 
